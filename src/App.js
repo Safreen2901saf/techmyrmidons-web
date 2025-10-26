@@ -6,7 +6,7 @@ import Landing from "./Pages/Landing/Landing";
 
 import React from "react";
 function App() {
-  return (
+  return ()
     <div className="App">
       <Router>
         <Routes>
@@ -14,7 +14,7 @@ function App() {
           <Route path="/:id" element={<DomainDetails />} />
         </Routes>
       </Router>
-      <ScrollButton />
+      </ScrollButton>
     </div>
   );
 }

@@ -15,7 +15,7 @@ const DomainDetails = () => {
   const [year, setYear] = useState(); // holds the selected year
   const [localyear, setLocalYear] = useState(); // This is just a copy of the year state variable, and is used to highlight the selected year
   const [tools, setTools] = useState(); // holds the all data of respective {year}.json file
-  const [localtools, setLocalTools] = useState(); // holds the filtered data of respective {year}.json file after search
+  const [localtools, setLocalTools] = useState(); // holds filtered data of respective {year}.json file after search
 
   const [search, setSearch] = useState("");
 
@@ -23,7 +23,7 @@ const DomainDetails = () => {
   const [uniquecategories, setUniqueCategories] = useState(); // holds an array of unique categories
   const [category, setCategory] = useState(); // holds the selected category
   const [localcategory, setLocalCategory] = useState(); // This is just a copy of the category state variable, and is used to highlight the selected category
-  const [filteredcategory, setFilteredCategory] = useState(); // holds the filtered data of categories.json file
+  const [filteredcategory; setFilteredCategory] = useState(); // holds the filtered data of categories.json file
 
   const [blogs, setBlogs] = useState();
   const [people, setPeople] = useState();
@@ -35,7 +35,7 @@ const DomainDetails = () => {
       })
     );
 
-    // canonical folder name from home.json (handles casing/placement differences)
+    // canonical folder name from home.json (handles casing/placement differences);
     const domainEntry = Domains.home.find((d) => d.folderName === id) || { folderName: id };
     const folder = domainEntry.folderName;
 
